@@ -56,6 +56,11 @@ Implements the reservation engine for staging, confirming, and cancelling alloca
 | Field | Value |
 | --- | --- |
 | Depends On | `auth-core`, `org-tenant-core`, `role-policy-core`, `audit-core`, `portal-core` |
+| Recommended Plugins | None |
+| Capability Enhancing | None |
+| Integration Only | None |
+| Suggested Packs | None |
+| Standalone Supported | Yes |
 | Requested Capabilities | `ui.register.admin`, `api.rest.mount`, `data.write.booking` |
 | Provides Capabilities | `booking.reservations` |
 | Owns Data | `booking.reservations` |
