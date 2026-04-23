@@ -6,14 +6,15 @@
     "framework/builtin-plugins/*"
   ],
   "scripts": {
-    "build": "bun --cwd framework/builtin-plugins/booking-core run build",
-    "typecheck": "bun --cwd framework/builtin-plugins/booking-core run typecheck",
-    "lint": "bun --cwd framework/builtin-plugins/booking-core run lint",
-    "test": "bun --cwd framework/builtin-plugins/booking-core run test",
-    "test:contracts": "bun --cwd framework/builtin-plugins/booking-core run test:contracts",
-    "test:migrations": "bun --cwd framework/builtin-plugins/booking-core run test:migrations",
-    "test:unit": "bun --cwd framework/builtin-plugins/booking-core run test:unit",
+    "build": "cd framework/builtin-plugins/booking-core && bun run build",
+    "typecheck": "cd framework/builtin-plugins/booking-core && bun run typecheck",
+    "lint": "cd framework/builtin-plugins/booking-core && bun run lint",
+    "test": "cd framework/builtin-plugins/booking-core && bun run test",
+    "test:contracts": "cd framework/builtin-plugins/booking-core && bun run test:contracts",
+    "test:migrations": "cd framework/builtin-plugins/booking-core && bun run test:migrations",
+    "test:unit": "cd framework/builtin-plugins/booking-core && bun run test:unit",
     "docs:summary": "node scripts/docs-summary.mjs",
-    "docs:check": "node scripts/docs-check.mjs"
+    "docs:check": "node scripts/docs-check.mjs",
+    "ci": "bun run build && bun run typecheck && bun run lint && bun run test && bun run docs:check"
   }
 }

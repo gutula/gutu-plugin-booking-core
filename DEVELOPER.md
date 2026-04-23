@@ -40,6 +40,8 @@ Implements the reservation engine for staging, confirming, and cancelling alloca
 | Package Name | `@plugins/booking-core` |
 | Manifest ID | `booking-core` |
 | Display Name | Booking Core |
+| Domain Group | Operational Data |
+| Default Category | Business / Booking & Reservations |
 | Version | `0.1.0` |
 | Kind | `app` |
 | Trust Tier | `first-party` |
@@ -200,6 +202,7 @@ console.log("action", stageReservationAction.id);
 
 - No dedicated integration test lane is exported in this repo today; validation currently leans on build, lint, typecheck, and test lanes.
 - No standalone plugin-owned event, job, or workflow catalog is exported yet; compose it through actions, resources, and the surrounding Gutu runtime.
+- The repo does not yet export a domain parity catalog with owned entities, reports, settings surfaces, and exception queues.
 
 ### Recommended next
 

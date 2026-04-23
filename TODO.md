@@ -13,6 +13,7 @@
 
 - No dedicated integration test lane is exported in this repo today; validation currently leans on build, lint, typecheck, and test lanes.
 - No standalone plugin-owned event, job, or workflow catalog is exported yet; compose it through actions, resources, and the surrounding Gutu runtime.
+- The repo does not yet export a domain parity catalog with owned entities, reports, settings surfaces, and exception queues.
 
 ## Recommended Next
 

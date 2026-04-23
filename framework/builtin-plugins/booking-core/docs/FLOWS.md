@@ -6,6 +6,10 @@
 - `booking.reservations.confirm`: Confirm a held or draft reservation after review has completed.
 - `booking.reservations.cancel`: Cancel a staged or confirmed reservation and release the resource window.
 
+## Operational scenario matrix
+
+- No operational scenario catalog is exported today.
+
 ## Action-level flows
 
 ### `booking.reservations.stage`
@@ -85,4 +89,5 @@ Forbidden shortcuts:
 - Direct dependencies: `auth-core`, `org-tenant-core`, `role-policy-core`, `audit-core`, `portal-core`
 - Requested capabilities: `ui.register.admin`, `api.rest.mount`, `data.write.booking`
 - Integration model: Actions+Resources+UI
+- ERPNext doctypes used as parity references: none declared
 - Recovery ownership should stay with the host orchestration layer when the plugin does not explicitly export jobs, workflows, or lifecycle events.

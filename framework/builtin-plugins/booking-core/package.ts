@@ -5,6 +5,12 @@ export default definePackage({
   kind: "app",
   version: "0.1.0",
   displayName: "Booking Core",
+  defaultCategory: {
+    id: "business",
+    label: "Business",
+    subcategoryId: "booking_reservations",
+    subcategoryLabel: "Booking & Reservations"
+  },
   description: "Reservations, booking holds, and conflict-safe resource allocation flows.",
   extends: [],
   dependsOn: ["auth-core", "org-tenant-core", "role-policy-core", "audit-core", "portal-core"],
